@@ -91,17 +91,20 @@ app.use("/listings", listingsRouter);
 app.use("/listings/:id/reviews", reviewsRouter);
 app.use("/", userRouter);
 
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
 
+
+// 404 Catch-All Route (Must be at the bottom)
+app.all("/{*any}", (req, res, next) => {
+  next(new ExpressError(404, "Page not found!"));
+});
 
 // Error Handling Middleware
 app.use((err, req, res, next) => {
   let { statusCode = 500, message = "Something went wrong!" } = err;
   res.status(statusCode).render("error.ejs", { statusCode, message });
-});
-
-// 404 Catch-All Route (Must be at the bottom)
-app.all("/{*any}", (req, res, next) => {
-  next(new ExpressError(404, "Page not found!"));
 });
 
 
