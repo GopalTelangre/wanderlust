@@ -83,7 +83,7 @@ body {
   @media (max-width: 767.98px) {
    .navbar-collapse {
     /* Smoothly animate when closing or opening */
-    transition: all 0.3s ease-in-out;
+    transition: none;
   }
   .navbar-collapse.show {
     display: block !important;
