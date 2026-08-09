@@ -81,11 +81,17 @@ body {
     border-radius: 25px;
   }
   @media (max-width: 767.98px) {
+  /* This block ONLY triggers when the menu is open */
   .navbar-collapse.show {
+    display: block !important;
+    background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    background-color: rgba(var(--bs-body-bg-rgb), 0.9) !important;
+    padding: 1.5rem;
+    margin-top: 0.75rem;
+    border-radius: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   }
 }
 
