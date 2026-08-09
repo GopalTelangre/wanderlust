@@ -81,7 +81,10 @@ body {
     border-radius: 25px;
   }
   @media (max-width: 767.98px) {
-  /* This block ONLY triggers when the menu is open */
+   .navbar-collapse {
+    /* Smoothly animate when closing or opening */
+    transition: all 0.3s ease-in-out;
+  }
   .navbar-collapse.show {
     display: block !important;
     background-color: rgba(255, 255, 255, 0.95);
