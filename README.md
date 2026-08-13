@@ -33,43 +33,43 @@ wanderlust/
 
 ├── models/
 
-│   ├── listing.js         # Mongoose schema for listings & hooks
+│      ├── listing.js         # Mongoose schema for listings & hooks
 
-│   ├── review.js          # Mongoose schema for reviews
+│      ├── review.js          # Mongoose schema for reviews
 
-│   └── user.js            # Mongoose schema for users
+│      └── user.js            # Mongoose schema for users
 
 │
 
 ├── routes/
 
-│   ├── listing.js         # Listing CRUD route handlers
+│      ├── listing.js         # Listing CRUD route handlers
 
-│   ├── review.js          # Review creation & deletion route handlers
+│      ├── review.js          # Review creation & deletion route handlers
 
-│   └── user.js            # User signup, login, and logout routes
+│      └── user.js            # User signup, login, and logout routes
 
 │
 
 ├── utils/
 
-│   ├── ExpressError.js    # Custom error handling class
+│      ├── ExpressError.js    # Custom error handling class
 
-│   └── wrapAsync.js       # Asynchronous error handler wrapper
+│      └── wrapAsync.js       # Asynchronous error handler wrapper
 
 │
 
 ├── views/
 
-│   ├── layouts/
+│      ├── layouts/
 
-│   │   └── boilerplate.ejs # Master layout template
+│      │   └── boilerplate.ejs # Master layout template
 
-│   ├── listings/          # Index, show, new, and edit EJS views
+│      ├── listings/          # Index, show, new, and edit EJS views
 
-│   ├── users/             # Login and signup EJS views
+│      ├── users/             # Login and signup EJS views
 
-│   └── error.ejs          # Error display template
+│      └── error.ejs          # Error display template
 
 │
 
