@@ -27,7 +27,7 @@ Wanderlust is a full-stack web application inspired by Airbnb, built using Node.
 ---
 
 ## 📂 Project Structure
-
+'''
 wanderlust/
 │
 ├── models/
@@ -57,7 +57,7 @@ wanderlust/
 └── package.json           # Project metadata and dependencies
 
 ---
-
+'''
 ## ⚙️ Getting Started Locally
 
 Follow these steps to set up and run the project on your local machine.
